@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://buttons.tres" type="Theme" id=1]
+[ext_resource path="res://Resources/buttons.tres" type="Theme" id=1]
 [ext_resource path="res://Resources/ATypewriterForMe.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://title.gd" type="Script" id=3]
+[ext_resource path="res://Code/title.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
