@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/559853__migfus20__mysterious-piano-music-loop.mp3-857b8ad1a23c53d949e9f87bdd71dc0f.mp3str"
+
+[deps]
+
+source_file="res://Resources/559853__migfus20__mysterious-piano-music-loop.mp3"
+dest_files=[ "res://.import/559853__migfus20__mysterious-piano-music-loop.mp3-857b8ad1a23c53d949e9f87bdd71dc0f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

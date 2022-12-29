@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Resources/ATypewriterForMe.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Credits.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+use_filter = true
+extra_spacing_top = 10
+extra_spacing_bottom = 10
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("RichTextLabel:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 217, 969 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "scroll"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("RichTextLabel:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 20 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 217, 969 ), Vector2( 217, -2050 ) ]
+}
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 217.0
+margin_top = 969.0
+margin_right = 759.0
+margin_bottom = 2977.98
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Restaurant Music is Jazz Background Music Loop by Migfus20 (CC-BY)
+
+Crosswalk Music is Jazz Background Music Loop by Migfus20 (CC-BY)
+
+(Both had the same name, they were a part of a pack called \"You like some Jazz\")
+
+Bedroom Music is Mysterious Piano Music Loop by Migfus20 (CC-BY)
+
+Font is A Typewriter For Me by Zachary Lucier (Public Domain)
+
+Thank you to Fishish and Uncle Nicolini for critique.
+
+Game is by
+IronShears
+
+
+
+
+Gift Exchange 2022 for syuzhet :)[/center]"
+text = "Restaurant Music is Jazz Background Music Loop by Migfus20 (CC-BY)
+
+Crosswalk Music is Jazz Background Music Loop by Migfus20 (CC-BY)
+
+(Both had the same name, they were a part of a pack called \"You like some Jazz\")
+
+Bedroom Music is Mysterious Piano Music Loop by Migfus20 (CC-BY)
+
+Font is A Typewriter For Me by Zachary Lucier (Public Domain)
+
+Thank you to Fishish and Uncle Nicolini for critique.
+
+Game is by
+IronShears
+
+
+
+
+Gift Exchange 2022 for syuzhet :)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/scroll = SubResource( 3 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

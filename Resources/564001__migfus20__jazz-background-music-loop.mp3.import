@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/564001__migfus20__jazz-background-music-loop.mp3-ec923cf5ac1507de88a09cc1b88a003b.mp3str"
+
+[deps]
+
+source_file="res://Resources/564001__migfus20__jazz-background-music-loop.mp3"
+dest_files=[ "res://.import/564001__migfus20__jazz-background-music-loop.mp3-ec923cf5ac1507de88a09cc1b88a003b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
